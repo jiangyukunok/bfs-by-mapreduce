@@ -84,7 +84,7 @@ class MRBFSIteration(MRJob):
         #with too much data. As a workaround, we're limiting the
         #number of edges to 500 here. You'd remove the [:500] if you
         #were running this for real on a Linux cluster.
-        node.connections = edges#edges[:500]
+        node.connections = edges#[:500]
 
         yield key, node.getLine()
 

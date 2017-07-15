@@ -6,9 +6,9 @@ import sys
 
 print 'Creating BFS starting input for character ' + sys.argv[1]
 
-with open("BFS-iteration-0.txt", 'w') as out:
+with open("iter_0.txt", 'w') as out:
 
-    with open("Marvel-graph.txt") as f:
+    with open("relation_graph.txt") as f:
 
         for line in f:
             fields = line.split()
